@@ -1,7 +1,7 @@
-483cadb3f9e237d41d58de4e49737aa1 *DESCRIPTION
+6f27fdeef4e275e9321e8caea90bd3a0 *DESCRIPTION
 e5abe7c858a218359d015f527a4cf0db *LICENSE
 85219fa11dc5a61be655d945856e15cd *NAMESPACE
-84b5b8a394b0b0e323c24e2ef1e5449d *NEWS.md
+c13214077646f23058f5131dab52cb2d *NEWS.md
 d2649db3c290213c650ef881c44bdef3 *R/K_get_interpolation.R
 f8180dff48fa2d85c698873a1a916cd2 *R/data.R
 bd73a2ad4024f920ac4d59adae11057c *R/disp.R
@@ -12,7 +12,7 @@ bd73a2ad4024f920ac4d59adae11057c *R/disp.R
 3f9ce24b029ba97b2856eacc267b36e6 *R/print.sim_data.R
 1d3533970dda4f49dee7c8d0ea6a8901 *R/print.sim_results.R
 719131ea75ae9798913a07cb56ec70e0 *R/rangr-package.R
-8540c324c8a1c4e50f3cc92cc506fc06 *R/sim.R
+46e1a91133c9fe510227093b34e78f49 *R/sim.R
 c51206f58d68e0baecf0b6c4c212b386 *R/srr-stats-standards.R
 e33bd9074984fc71cd7fa4dc0f0dd5c2 *R/subset.sim_results.R
 c77497644625d570bf1c598ee7d83494 *R/summary.sim_data.R
@@ -27,7 +27,7 @@ de06cb08de67b134abba1f94416effec *build/vignette.rds
 a4a0ff3c1b87cac2cc7071bbc0d61a12 *inst/CITATION
 2aec973ed615ca092c1829ee21d9cabb *inst/doc/rangr.R
 6d46b384cc79a2cd3f27a50e3e07cae2 *inst/doc/rangr.Rmd
-7c16f00eb49a01ba4e63f106d59f1597 *inst/doc/rangr.html
+41ea041c8b7a5d19470c2ec1341531bd *inst/doc/rangr.html
 726b6c685785e6fdb661ae2cbf8ed368 *inst/extdata/sim_data_01.rda
 22cff4339d413b17a625d7c8daeb7fc0 *inst/extdata/sim_data_02.rda
 7268db58681cc74c9d8abcc741f5ba35 *inst/extdata/sim_result_01.rda
@@ -78,7 +78,7 @@ c6ef7259d35d053219b86c98eef6ab79 *man/summary.sim_results.Rd
 e91c734acedc7b378e1f30bc365e8969 *man/update.sim_data.Rd
 fb3d9db8ccb55cc1d6bafea3ba11e784 *tests/testthat.R
 da1c41c0f7963c3120a8c2b3c11aef02 *tests/testthat/Rplots.pdf
-ece0e3e75886165739ca77cfc2dc24b3 *tests/testthat/fixtures/generate_test_data.R
+b3c125026e3d3078b2c994c5d4cbf61a *tests/testthat/fixtures/generate_test_data.R
 0558692ec818b03ffebe2b48e9ced213 *tests/testthat/fixtures/test_all_points.rds
 e770d1379a02486a0773c8bdcebccc41 *tests/testthat/fixtures/test_data_table_lon_lat.rds
 23dee1772dc758749e95d4c43fd37285 *tests/testthat/fixtures/test_data_table_mini.rds
@@ -88,7 +88,7 @@ b047cd3622081900635fc15806d80b11 *tests/testthat/fixtures/test_id_rast_lon_lat.t
 488fcda8dca58f6732c26385254aadf9 *tests/testthat/fixtures/test_interpolated_rast.tif
 2914145749f6847a44f6ea954db73a80 *tests/testthat/fixtures/test_interpolated_raster.rds
 488fcda8dca58f6732c26385254aadf9 *tests/testthat/fixtures/test_interpolated_raster.tif
-810eb5d5ec8f2fa03f874b7ba5f3c3e6 *tests/testthat/fixtures/test_ncells_in_circle_lon_lat.rds
+37be6e0fc0962aef380064281c44d107 *tests/testthat/fixtures/test_ncells_in_circle_lon_lat.rds
 ea2655d5f687b7212fc457d2417acaec *tests/testthat/fixtures/test_ncells_in_circle_mini.rds
 faded03d0b6452503c75d6fd3866d3f7 *tests/testthat/fixtures/test_points.rds
 b1dd5d41b67654126f27a2cb8933c18a *tests/testthat/fixtures/test_rast.rds
@@ -97,14 +97,15 @@ b1dd5d41b67654126f27a2cb8933c18a *tests/testthat/fixtures/test_rast.rds
 8fe9e141b42e7d82c07b48ed36b24b62 *tests/testthat/fixtures/test_rast_mini.rds
 aa4222f3de893c5e4a8a4bc771fcd3e5 *tests/testthat/fixtures/test_sim_data.rds
 69453603086e6b6af3da50cf68186baa *tests/testthat/fixtures/test_sim_data_lon_lat.rds
+8a8d9d91c762500897d050f71ce23a2f *tests/testthat/fixtures/test_sim_data_lon_lat_circle.rds
 9d0d2ea9267bb4f3c80ccddebb0c8e73 *tests/testthat/fixtures/test_sim_res.rds
 d1e01eb342165a329507b26f388076fe *tests/testthat/test-K_get_interpolation.R
 61805d3000a6d06f07ca6f1f69be2820 *tests/testthat/test-disp.R
 b303b9a92187b89b569651d34b8c56c9 *tests/testthat/test-get_observations.R
 577b48caafa9f7b096175c116e8c47ed *tests/testthat/test-growth_functions.R
-51215a52ac077d588227d65f2cbc9a4f *tests/testthat/test-initialise.R
+07d1052eb0351454941e71b41ccdf2b8 *tests/testthat/test-initialise.R
 4942f3ecfe65dd19fcf5e7cc7b3152ff *tests/testthat/test-sim.R
-1eaa8b2158335780e43400f107a1151d *tests/testthat/test-sim_results_to_rast.R
+3d9887d84512c97892c9e1f13a42eb57 *tests/testthat/test-sim_results_to_rast.R
 214efb29ddec94492eff70784dca981a *tests/testthat/test-subset_sim.R
 2241ba38e7828034413a7df70fff701c *tests/testthat/test-update_sim.R
 e74dd7d475ce5b4f5cb4e592b7667154 *vignettes/img/rangr_diagram.png

@@ -1,7 +1,7 @@
 Package: rangr
 Type: Package
 Title: Mechanistic Simulation of Species Range Dynamics
-Version: 1.0.5
+Version: 1.0.6
 Authors@R: c(
     person("Katarzyna", "Markowska", email = "katarzyna.markowska@amu.edu.pl", role = c("aut", "cre")),
     person("Lechosław", "Kuczyński", email = "lechu@amu.edu.pl", role = "aut"),
@@ -29,11 +29,11 @@ URL: https://github.com/ropensci/rangr,
         https://doi.org/10.1111/2041-210X.14475
 BugReports: https://github.com/ropensci/rangr/issues
 NeedsCompilation: no
-Packaged: 2025-02-13 10:47:09 UTC; katar
+Packaged: 2025-02-26 19:10:48 UTC; katar
 Author: Katarzyna Markowska [aut, cre],
   Lechosław Kuczyński [aut],
   Tad Dallas [rev],
   Joanne Potts [rev]
 Maintainer: Katarzyna Markowska <katarzyna.markowska@amu.edu.pl>
 Repository: CRAN
-Date/Publication: 2025-02-14 14:30:02 UTC
+Date/Publication: 2025-02-26 23:40:02 UTC
