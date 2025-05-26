@@ -18,7 +18,7 @@ sim_data_02$K_map <- unwrap(sim_data_02$K_map)
 # knitr::include_graphics("img/rangr_diagram.png")
 
 ## ----load_rangr, eval = FALSE-------------------------------------------------
-#  devtools::install_github("ropensci/rangr")
+#  install.packages("rangr")
 #  library(rangr)
 
 ## ----load_raster, eval = FALSE------------------------------------------------

@@ -1,12 +1,34 @@
-#' Transformation `sim_results` To Raster
+#' Generic conversion to SpatRaster
 #'
-#' This function transforms selected subset of abundance matrices from
+#' A generic method to convert simulation result objects into
+#' [`SpatRaster`][terra::SpatRaster-class] format.
+#'
+#' @param obj An object to convert.
+#' @param ... Additional arguments passed to methods.
+#'
+#' @return A [`SpatRaster`][terra::SpatRaster-class] or a list of such objects.
+#' @export
+#'
+#' @seealso [`to_rast.sim_results()`]
+#'
+#' @examples
+#' \dontrun{
+#' to_rast(sim_results_object)
+#' }
+to_rast <- function(obj, ...) {
+  UseMethod("to_rast")
+}
+
+
+#' Convert `sim_results` To SpatRaster
+#'
+#' Converts selected subset of abundance matrices from
 #' `sim_results` into [`SpatRaster`][terra::SpatRaster-class] object. Layers are
 #' specified by `time_points`, which can be one or multiple points in time.
 #'
 #'
 #'
-#' @param sim_results `sim_results` object created by [`sim`]
+#' @param obj `sim_results` object created by [`sim`]
 #' @param time_points numeric vector of length 1 or more; specifies points in
 #' time from which [`SpatRaster`][terra::SpatRaster-class] will be created - as
 #' default the last year of simulation; if `length(time_points) > 0`
@@ -14,10 +36,13 @@
 #' each element of `time_points`
 #' @param template [`SpatRaster`][terra::SpatRaster-class] object; can be used
 #' as a template to create returned object
+#' @param ... Currently unused.
 #'
 #' @return [`SpatRaster`][terra::SpatRaster-class] based on `sim_results` object
 #' with layers corresponding to `time_points`.
 #' @export
+#'
+#' @method to_rast sim_results
 #'
 #' @references Hijmans R (2024). terra: Spatial Data Analysis. R package version
 #' 1.7-81, \url{https://rspatial.github.io/terra/}, \url{https://rspatial.org/}
@@ -64,11 +89,11 @@
 #' (if the template is provided)
 #' @srrstats {SP4.2} returned values are documented
 #'
-to_rast <- function(
-    sim_results, time_points = sim_results$simulated_time, template = NULL) {
+to_rast.sim_results <- function(
+    obj, time_points = obj$simulated_time, template = NULL, ...) {
 
   #' @srrstats {SP2.7} validate input class
-  assert_that(inherits(sim_results, "sim_results"))
+  assert_that(inherits(obj, "sim_results"))
 
   if(is.null(template)) {
     # if no template provide - make raster only with values
@@ -76,13 +101,13 @@ to_rast <- function(
     #' @srrstats {G2.9} make default raster and show warning
 
     warning("No template provided. Returned SpatRaster lacks geographical information (you can use one of the input maps from the sim_data object as template)") #nolint
-    out <- rast(sim_results$N_map[, , time_points])
+    out <- rast(obj$N_map[, , time_points])
 
   } else {
     # if template provided
 
     # check if template and x have the same dimension
-    if (!all(dim(sim_results$N_map)[c(1, 2)] == dim(template)[c(1, 2)])) {
+    if (!all(dim(obj$N_map)[c(1, 2)] == dim(template)[c(1, 2)])) {
       stop("sim_resulst and template are not compatible with each other - dimensions of the study area do not match")
     }
 
@@ -90,7 +115,7 @@ to_rast <- function(
     # make raster bases on the template
     out <- unwrap(template)
     nlyr(out) <- length(time_points)
-    values(out) <- sim_results$N_map[, , time_points]
+    values(out) <- obj$N_map[, , time_points]
 
   }
 
