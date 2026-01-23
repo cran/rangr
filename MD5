@@ -1,7 +1,7 @@
-c90b8eb6aef2beb327c2700a974da4ee *DESCRIPTION
+dc9aefa42a3e273ee506277eb1551949 *DESCRIPTION
 e5abe7c858a218359d015f527a4cf0db *LICENSE
 733482f9b40930df851ca78b826edd66 *NAMESPACE
-70d80cfba330436c842dcf1a4934037f *NEWS.md
+440a70988ac5272054e6daf92a521d33 *NEWS.md
 d2649db3c290213c650ef881c44bdef3 *R/K_get_interpolation.R
 f8180dff48fa2d85c698873a1a916cd2 *R/data.R
 9286c582f2abd7e878135bebea645b06 *R/disp.R
@@ -27,7 +27,7 @@ de06cb08de67b134abba1f94416effec *build/vignette.rds
 b808ffad785adb58b1e9c7812ddd1324 *inst/CITATION
 8961900270eaa8f8e30df2104a27aa09 *inst/doc/rangr.R
 25569059ea3431ae58a21b07de2d9666 *inst/doc/rangr.Rmd
-0849cc8f72cddae26ab7bb82e17e546c *inst/doc/rangr.html
+c3ac62a7f18612ee25a14038341b52f6 *inst/doc/rangr.html
 726b6c685785e6fdb661ae2cbf8ed368 *inst/extdata/sim_data_01.rda
 22cff4339d413b17a625d7c8daeb7fc0 *inst/extdata/sim_data_02.rda
 7268db58681cc74c9d8abcc741f5ba35 *inst/extdata/sim_result_01.rda
@@ -69,7 +69,7 @@ e70665fc9de85fcda1e81af659db4716 *man/print.sim_data.Rd
 c42fc44a47f98a253863a9d9146779c6 *man/print.sim_results.Rd
 bb096e8f0cb8c69aa5e8d2c8ec8abbd2 *man/print.summary.sim_data.Rd
 f628e4d559539984b78247409eadf3de *man/print.summary.sim_results.Rd
-00c4887ca3b7b237b37864432ff3098e *man/rangr-package.Rd
+e4c4fa1be0dc318ce396eadb01188dd5 *man/rangr-package.Rd
 76df860b2a84fbc0c5a4ecc0bfaf42bd *man/sim.Rd
 1faf23587ef12b5695dc5405960616a5 *man/subset.sim_results.Rd
 a792056837e6ab3404fbd336cd690a3a *man/summary.sim_data.Rd
